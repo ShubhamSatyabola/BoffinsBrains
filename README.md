@@ -1,10 +1,38 @@
-# Getting Started with Create React App and Redux
+# Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Available Scripts
+This repository contains source code for assesment of product mnagement . The web app is created using React and Redux and Tailwind Css . Other dependecies / libraries used in app are react-router-dom for handling page routing 
 
+for backend we had used JSON-server 
+
+# Key Features
+
+Search Products: Easily find products using the search functionality based on product titles and tags.
+Add to Cart: Select and add products to the cart with just a few clicks.
+Remove Products: Remove selected products from the cart effortlessly.
+Adjust Quantity: Increment or decrement the quantity of selected products in the cart to manage inventory efficiently.
+
+
+The App comprises of pages like .\
+product page : for searching and adding the product , cart for showing the product.\
+
+
+# Project folder Structure
+locate `src` folder .\
+`/src/app/store` : folder consist redux store setup  used in project.\
+`/src/features/Product` : implementation of search bar and adding product to cart . Consist of Product.js for search bar component , productApi.js for setting up API and ProducSlice.js for setting up actions\
+`/src/features/Cart` : implementation of cart functinalities . Consist of Cart.js for cart component , cartApi.js for setting up API and cartSlice.js for setting up actions\
+`/src/pages`:  File in this folder consist of pages which combine component  from feature folder .\
+`/src/App` : The file in /src folder handles all the render logic used . uses react router dom for routing of pages
+
+## Project set up
 In the project directory, you can run:
+### `git clone https://github.com/ShubhamSatyabola/BoffinsBrains.git`
+clone the repo .
+### `npm install`
+install  the dependencies used in project.
+### `npx json-server --watch data.json --port 8000`
+to start json server
 
 ### `npm start`
 
